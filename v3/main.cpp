@@ -8,6 +8,11 @@ struct doctors{
     string name ;
     int age;
     string addres;
+    void print(){
+        cout<<" name :"<<name<<endl;
+        cout<<"age :"<<age<<endl;
+        cout<<"address :"<<addres<<endl;
+    };
 };
 
 int main()
@@ -39,9 +44,7 @@ int main()
     for(int i =0; i<number_of_doctors;i++){
 
         cout<< "------------  data of doctor "<<i<<":"<<endl;
-        cout<<" name :"<<doctors[i].name<<endl;
-        cout<<"age :"<<doctors[i].age<<endl;
-        cout<<"address :"<<doctors[i].addres<<endl;
+        doctors[i].print();
 
     };
 }
